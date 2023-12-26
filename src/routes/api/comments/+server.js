@@ -18,7 +18,7 @@ export async function POST(RequestEvent) {
   return json(newComment, { status: 201 });
 }
 
-export async function PUT(RequestEvent) {
+export async function DELETE(RequestEvent) {
   const { request } = RequestEvent;
 
   const { text, id } = await request.json();
